@@ -1,0 +1,21 @@
+<div class="d-flex" id="prolo-wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right d-none d-md-block d-lg-block my-4 py-4" id="prolo-sidebar-wrapper">
+      <div class="prolo-sidebar-heading my-2"> <%%DATA(app-name)%%> Admin </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <%%DATA(table-links)%%>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="prolo-page-content-wrapper" class="my-4 py-4">
+      <%%DATA(prolo-items)%%>
+    </div>
+    <!-- /#prolo-page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+<style>#prolo-wrapper {overflow-x: hidden;}#prolo-idebar-wrapper {min-height: 100vh;margin-left: -15rem;-webkit-transition: margin .25s ease-out;-moz-transition: margin .25s ease-out;-o-transition: margin .25s ease-out;transition: margin .25s ease-out;}#prolo-sidebar-wrapper .prolo-sidebar-heading {padding: 0.875rem 1.25rem;font-size: 1.2rem;}#prolo-sidebar-wrapper .list-group {width: 15rem;}#prolo-page-content-wrapper {min-width: 100vw;}#prolo-wrapper.toggled #prolo-sidebar-wrapper {margin-left: 0;}@media (min-width: 768px) {#prolo-sidebar-wrapper {margin-left: 0;}#prolo-page-content-wrapper {min-width: 0;width: 100%;}#prolo-wrapper.toggled #sidebar-wrapper {margin-left: -15rem;}}</style>

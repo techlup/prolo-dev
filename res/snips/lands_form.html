@@ -1,0 +1,42 @@
+<form method="POST" class="col-md-4 mx-auto my-4" enctype="multipart/form-data">
+    <input type="hidden" name="table_name" value="lands"/>
+    <div class="md-form mt-0">
+        ID: <input placeholder="Search" type="text" name="id" value="<%%DATA(id)%%>" readonly/>
+    </div>
+    <div class="form-group">
+        <label for="town">Town:</label>
+        <input type="text" class="form-control" name="town" value="<%%DATA(town)%%>"/>
+    </div>
+    <div class="form-group">
+        <label for="area">Area:</label>
+        <input type="text" class="form-control" name="area" value="<%%DATA(area)%%>"/>
+    </div>
+    <div class="form-group">
+        <label for="size">Size:</label>
+        <input type="text" class="form-control" name="size" value="<%%DATA(size)%%>"/>
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="text" class="form-control" name="price" value="<%%DATA(price)%%>"/>
+    </div>
+    <div class="form-group">
+        <label for="type">Select Type:</label>
+        <select class="form-control" name="type" value="<%%DATA(type)%%>">
+            <option value="Residential">Residential</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Agricultural">Agricultural</option>
+        </select>
+    </div>
+     <div class="form-group">
+        <label for="coordinates">Gps Coordinates:</label>
+        <input type="text" class="form-control" name="coordinates" value="<%%DATA(coordinates)%%>"/>
+    </div>
+    <div class="form-group">
+        <label for="coordinates">Image:</label>
+        <img src="<%%DATA(image)%%>" width="200px" height="150px"/>
+        <input type="file" name="image"/>
+    </div>
+        <input type="submit" name="save" class="btn btn-outline-success"  value="save"/>
+        <input type="submit" name="new" class="btn btn-outline-secondary mx-4"  value="new"/>
+        <input type="submit" name="delete" class="btn btn-danger mx-4 float-right"  value="delete"/>
+</form>
